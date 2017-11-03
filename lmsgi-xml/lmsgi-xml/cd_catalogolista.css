@@ -1,0 +1,46 @@
+CATALOG:before {
+content: "Mi coleccion de CDs de " attr(propietario);
+counter-reset: contadorcd;
+}
+PRICE:after { 
+content: " " attr(divisa);
+}
+
+TITLE:after {
+content: ", de ";
+font-style: italic;
+}
+TITLE:before  {
+counter-increment: contadorcd;
+content: counter(contadorcd) ".- ";
+}
+
+
+CATALOG {
+   display: block;
+    background-color: white;
+    width: 70%;
+    margin: auto;
+}
+CD {
+display: block;
+border-top: 4px solid blue;
+margin-bottom: 1px;
+}
+TITLE,ARTIST { 
+color: blue;
+}
+
+
+COUNTRY, PRICE, YEAR,COMPANY{
+    background-color: grey;
+    display: list-item;
+    list-style-position: outside;
+    padding: 0.1em 0.2em;
+  margin-left: 50px;
+}
+
+
+TITLE {
+ color: black;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2</title>
+</head>
+<body>
+<div>
+<h1>Tema: Introducción a JavaScript</h1>
+
+<section>
+	<h2>Capítulo 1. Historia de Javascript</h2>
+	
+	<p>Pendiente de desarrollar</p>
+</section>
+
+<section>
+	<h2>Capítulo 2. Nuestro primer script</h3>
+	
+	<p>Pendiente de desarrollar</p>
+</section>
+
+<section>
+	<h2>Capítulo 3. </h2>
+	<p>Programación básica
+		
+		Sobre la sentencias goto y continue, deberá tener en cuenta que, según J. López y E. Quero
+		
+		<cite>"Su uso está restringido en una programación estructurada,
+		  	pues tiende a 
+		  	generar programas ilegibles de difícil entendimiento y comprensión, lo que dificulta, y en 
+		  	ocasiones impide, cualquier tipo de actualización o 
+		  	modificación sobre los mismos,
+		  	obligando al programador a desarrollar un nuevo programa o aplicación".
+		  	
+		  	Poro otra parte, los Coding Standards dicen que
+		  	"In the case of 
+		  	the goto statement, it has long been observed that unfettered use of goto's 
+		  	quickly leads to unmaintainable spaghetti code".</cite>  </p>
+	
+	<h3>3.1 Introducción </h3>  
+	
+	<p>Aunque todas las variables de JavaScript se crean de la misma forma (mediante la palabra reservada var), la forma en la que se les asigna un valor depende del tipo de valor que se quiere almacenar (números, textos, etc.).</p>
+	
+	<h4>3.1.1 <ins>--Más información--</ins>  <del>**Contacto**</del></h4>
+	
+	<p>Nos puede localizar en info@info.com, o en el número de teléfono 91 123 456. Por otra parte, si lo que desea es información comercial, puede contactar a comercial@info.com o en el 93 456 789.</p>
+</section>
+
+
+<h3>3.2. Tipos de variables</h3>
+   
+<h4>3.2.1. Numéricas</h4>
+
+<p>Se utilizan para <del>**almacenar**</del> --guardar-- valores numéricos enteros (llamados integer en <strong>inglés</strong>) o decimales (llamados float en <strong>inglés</strong>). En este caso, el valor se asigna indicando directamente el número entero o decimal. Los números decimales utilizan el carácter . (punto) en vez de , (coma) para separar la parte entera y la parte decimal:
+	
+	
+	<pre><code>
+	var iva = 16;        // variable tipo entero
+	var total = 234.65;  // variable tipo decimal</code></pre> </p>
+
+
+<h4>3.2.2. Cadenas de texto</h4>
+
+<p>Se utilizan para almacenar caracteres, palabras y/o frases de texto. Para asignar el valor a la variable, se encierra el valor entre comillas dobles o simples, para delimitar su comienzo y su final:
+	
+	<pre>
+	<code>var mensaje = "Bienvenido a nuestro sitio web";
+	var nombreProducto = 'Producto ABC';
+	var letraSeleccionada = 'c';</code>
+	</pre>
+	
+	En ocasiones, el texto que se almacena en las variables no es tan sencillo. Si por ejemplo el propio texto contiene comillas simples o dobles, la estrategia que se sigue es la de encerrar el texto con las comillas (simples o dobles) que no utilice el texto:
+	
+	/* El contenido de texto1 tiene comillas simples, por lo que
+	    se encierra con comillas dobles */
+	<pre>
+	<code>var texto1 = "Una frase con 'comillas simples' dentro";</code>
+	</pre>
+	 
+	/* El contenido de texto2 tiene comillas dobles, por lo que
+	    se encierra con comillas simples */
+	<pre>
+	<code>var texto2 = 'Una frase con "comillas dobles" dentro'; </code>
+	</pre>
+	
+	
+	No obstante, a veces las cadenas de texto contienen tanto comillas simples como dobles. Además, existen otros caracteres que son difíciles de incluir en una variable de texto (tabulador, ENTER, etc.) Para resolver estos problemas, JavaScript define un mecanismo para incluir de forma sencilla caracteres especiales y problemáticos dentro de una cadena de texto.
+	
+	
+	
+	
+	De esta forma, el ejemplo anterior que contenía comillas simples y dobles dentro del texto se puede rehacer de la siguiente forma:
+	
+	<pre>
+	<code>var texto1 = 'Una frase con \'comillas simples\' dentro';		 
+	var texto2 = "Una frase con \"comillas dobles\" dentro";</code> 
+	</pre>
+	
+	
+	Este mecanismo de JavaScript se denomina <cite>"mecanismo de escape"</cite> de los caracteres problemáticos, y es habitual referirse a que los caracteres han sido "escapados".</p>
+
+
+<h4>3.2.3. Arrays</h4>
+
+<p>En ocasiones, a los arrays se les llama vectores, matrices e incluso arreglos. No obstante, el término array es el más utilizado y es una palabra comúnmente aceptada en el entorno de la programación.
+	
+	Un array es una colección de variables, que pueden ser todas del mismo tipo o cada una de un tipo diferente. Su utilidad se comprende mejor con un ejemplo sencillo: si una aplicación necesita manejar los días de la semana, se podrían crear siete variables de tipo texto:
+	
+	<pre>
+	<code>var dia1 = "Lunes";
+	var dia2 = "Martes";
+	...
+	var dia7 = "Domingo"; </code>
+	</pre>
+	
+	Aunque el código anterior no es incorrecto, sí que es poco eficiente y complica en exceso la programación. Si en vez de los días de la semana se tuviera que guardar el nombre de los meses del año, el nombre de todos los países del mundo o las mediciones diarias de temperatura de los últimos 100 años, se tendrían que crear decenas o cientos de variables.
+	
+	Ahora, una única variable llamada dias almacena todos los valores relacionados entre sí, en este caso los días de la semana. Para definir un array, se utilizan los caracteres [ y ] para delimitar su comienzo y su final y se utiliza el carácter , (coma) para separar sus elementos:
+	
+	<pre>
+	<code>var nombre_array = [valor1, valor2, ..., valorN]; </code>
+	</pre>
+	
+	
+	Una vez definido un array, es muy sencillo acceder a cada uno de sus elementos. Cada elemento se accede indicando su posición dentro del array. La única complicación, que es responsable de muchos errores cuando se empieza a programar, es que las posiciones de los elementos empiezan a contarse en el 0 y no en el 1:</p>
+
+<h4>3.2.4. Booleanos</h4>
+
+<p>Las variables de tipo boolean o booleano también se conocen con el nombre de variables de tipo lógico. Aunque para entender realmente su utilidad se debe estudiar la programación avanzada con JavaScript del siguiente capítulo, su funcionamiento básico es muy sencillo.
+	
+	Una variable de tipo boolean almacena un tipo especial de valor que solamente puede tomar dos valores: true (verdadero) o false (falso). No se puede utilizar para almacenar números y tampoco permite guardar cadenas de texto.
+	
+	Los únicos valores que pueden almacenar estas variables son true y false, por lo que no pueden utilizarse los valores verdadero y falso. A continuación se muestra un par de variables de tipo booleano:
+	
+	<pre>
+	<code>var clienteRegistrado = false;
+	var ivaIncluido = true;</code>
+	</pre> </p>
+
+
+</div>
+</body>
+</html>

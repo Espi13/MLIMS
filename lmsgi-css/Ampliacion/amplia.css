@@ -1,0 +1,24 @@
+/*amplia.css*/
+
+p{
+	/*column-count: colmc*/
+	
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	-o-column-count: 4;
+	column-count: 4;
+
+	/*column-rule: colmr*/
+
+	-webkit-column-rule: 2px solid blue;
+	-moz-column-rule: 2px solid blue;
+	-o-column-rule: 2px solid blue;
+	column-rule: 2px solid blue;
+
+	/*column-gap: colmg */
+
+	-webkit-column-gap: 6em;
+	-moz-column-gap: 6em;
+	-o-column-gap: 6em;
+	column-gap: 6em;
+}

@@ -1,0 +1,63 @@
+/* Estilos cabecera */
+/*section article p{color:green;}
+h2 {color:blue;}
+nav ul li a {text-decoration: none;}
+
+.novedad{
+ margin:40px; 
+font-weight: bold;
+color: red;
+}
+header h1.novedad{
+	background-color: yellow;
+	color: blue;
+}
+#principal{
+	border:2px solid green;
+}
+#cultura{
+	color:orange;
+}*/
+
+/*.novedad{
+	background-color: yellow;
+}
+.resumen{
+	font-weight: bold;
+}
+.novedad.resumen{
+	color: red;
+}*/
+
+
+/*h2 + p{
+	border: red 4px solid;
+}
+p + p{
+	color: green;
+}*/
+/*[title]{
+	background-color: yellow;
+}
+[lang|="en"]{
+	color: red;
+}
+a[hre$=".pdf"]{
+	font-weight: bold;
+}*/
+
+/*Tema medidas y colores*/
+/*header{
+	width: 50%;
+	border: 2px solid blue;
+}
+header article{
+	width:50%;
+	border: white 1px dotted;
+}
+body{
+	font-size: 12px;
+}*/
+
+/*colorea*/
+p{color:#FF00A2;}

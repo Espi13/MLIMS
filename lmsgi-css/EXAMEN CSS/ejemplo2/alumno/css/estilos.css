@@ -1,0 +1,124 @@
+/* estilos.css */
+  /*VENTAS*/
+
+
+
+
+  table,td,th {
+  	border: 2px solid black;
+  	border-collapse: collapse;
+  }
+
+  th[scope="col"] {
+  	color: red;
+  }
+  th[scope="row"]{
+  	color: green;
+  }
+  td:nth-child(even){
+		color: blue;
+  }
+  tr:nth-child(3n){
+  background-color: yellow;
+  }
+  caption {
+  	text-align: right;
+  	caption-side: bottom;
+  	color: red;
+  	font-weight: bold;
+
+  }
+
+tr td {
+	text-align: right;
+}
+
+tr{
+ 	counter-reset: contr;
+ }
+
+tr{
+ 	counter-increment: contr;
+
+ }
+
+  tr {
+  	counter-reset: contfila;
+  }
+	tr td::after{
+	counter-increment: contfila;
+	content:"("counter(contr)"." counter(contfila) ")";
+	color: gray;
+  }
+
+
+  form {
+  	margin-top: 2em;
+  	border: 2px solid;
+  	border: double blue;
+  	width: 40%;
+  }
+
+label,input {
+	margin-left: 1em;
+	display: block;
+}
+ label {
+ 	margin-top: 1em;
+
+ }
+
+ input.enviar {
+ 	margin-top: 1em;
+ 	margin-bottom: 1em;
+ }
+
+ /*Index*/
+
+a[href$=".zip"]{
+	background: url(../figuras/iconoZIP.gif) no-repeat right;
+	padding-right: 25px;
+}
+
+
+ header p abbr {
+ 	text-decoration: none;
+	background-color: yellow; 
+}
+ header p abbr::after {
+ 	content: "*primera abreviatura*";
+ 	font-size: 70%;
+ 	font-style: italic;
+ 	text-align: top;
+ 	vertical-align: top;
+ }
+ header {
+ 	border-bottom: 1px solid blue;
+ }
+ section h2 {
+ 	color: blue;
+ 	text-align: center;
+ }
+ aside abbr {
+ 	background-color: yellow;
+ }
+
+ aside abbr::after {
+ 	content: "*segunda abreviatura*";
+ 	font-size: 70%;
+ 	font-style: italic;
+ 	text-align: top;
+ 	vertical-align: top;
+ }
+
+ section img {
+ 	border: 2px  solid red;
+}
+header img {
+	float: left;
+}
+
+h3 + p:first{
+	font-variant: small-caps;
+	}
+

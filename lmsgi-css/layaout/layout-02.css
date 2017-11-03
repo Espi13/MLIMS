@@ -1,0 +1,63 @@
+/*Mobile first*/
+
+@media print {
+	aside {
+		display: none;
+	}
+}
+
+h2 {
+	border-bottom: dotted 1px blue;
+}
+
+h1 {
+	text-align: center;
+}
+aside {
+	font-size: 80%;
+}
+footer div {
+	float: left;
+	width: 50%;
+}
+
+/*estilos ancho >= 700*/
+
+@media(min-width: 700px){
+	nav {
+		float: left;
+		width: 25%;
+	}
+
+	section {
+		float: left;
+		width: 75%;
+	}
+	footer {
+		clear: both;
+	}
+}
+@media (min-width: 900px){
+	article,aside {
+		float: left;
+		width: 50%;
+	}
+	h2 {
+		border-bottom: none;
+	}
+}
+/*ancho <= 699*/
+@media (max-width: 699px){
+/*nav en horizontal*/
+
+	nav li {
+		float: left;
+		list-style:none;
+		width: 20%;
+	}
+
+	
+}
+
+
+/*@media (min-width: 600px) and (max-width: 900px){}*/

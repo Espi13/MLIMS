@@ -1,0 +1,21 @@
+@media print {
+	
+body {
+	font-family: Arial;
+	font-style: none;
+	text-align: left;
+}
+ nav,img,footer,aside {
+ 	display:none;
+ }
+  a {
+  	text-decoration: underline;
+  	color: blue;
+  }
+  dfn::before {
+  	content: attr(title)"(";
+  }
+  dfn::after {
+  	content: ")";
+  }
+}

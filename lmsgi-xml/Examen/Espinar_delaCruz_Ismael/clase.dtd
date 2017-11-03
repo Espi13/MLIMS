@@ -1,0 +1,23 @@
+<!ELEMENT grupo (profesorado, clase)>
+<!ELEMENT profesorado (profesor+)>
+<!ELEMENT clase (aula,alumno*)>
+<!ELEMENT aula (#PCDATA)>
+
+<!ELEMENT profesor (nombreProfesor, responsable+)>
+<!ELEMENT nombreProfesor (#PCDATA)>
+<!ELEMENT responsable (#PCDATA)>
+
+<!ELEMENT alumno (nombre,alias,media,modulos)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT alias (#PCDATA)>
+<!ELEMENT media (#PCDATA)>
+<!ELEMENT modulos (modulo+)>
+<!ELEMENT modulo (#PCDATA)>
+
+
+<!ATTLIST grupo grupo CDATA #REQUIRED>
+<!ATTLIST profesor tutor (si|no) "no">
+<!ATTLIST responsable codigo ID #REQUIRED>
+<!ATTLIST alumno repetidor (si|no) #IMPLIED>
+<!ATTLIST alias file CDATA #IMPLIED>
+<!ATTLIST modulo codigo IDREF #REQUIRED>

@@ -1,0 +1,15 @@
+
+@media print {
+	header,footer,aside,nav {
+		display: none;
+	}
+}
+section {
+	font-size: 12pt;
+}
+a:after {
+	content: "(" attr(href)")";
+}
+a:before {
+	content: " -Despues- ";
+}

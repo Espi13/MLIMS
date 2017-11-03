@@ -1,0 +1,140 @@
+ 
+ @media(max-width: 800px) {
+  nav ol li{
+
+		float: left;
+		width: 25%;
+		list-style-type: none;
+  }
+
+ header {
+ 	float: left;
+ 	width: 80%;
+
+ }
+ header img {
+ 	float: left;
+
+ }
+ header h1 {
+ 	float: left;
+ }
+  header {
+  	border-top:  1px solid blue;
+  	clear: both;
+  }
+  article {
+  	clear: both;
+  }
+  section {
+	counter-reset: dfn1;
+}
+section dfn::before {
+	counter-increment: dfn1;
+	content:"*"counter(dfn1);
+	background-color: yellow;
+}
+
+ }
+@media (min-width:800px) and (max-width: 1100px){
+
+
+
+	nav ol li {
+ 	list-style-type: circle;
+
+
+ }
+ nav {
+ 	float: left;
+ 	width: 20%;
+ }
+ header {
+ 	float: left;
+ 	width: 80%;
+
+ }
+ header img {
+ 	float: left;
+
+ }
+ header h1 {
+ 	float: left;
+ }
+ section.iz {
+ 	float: left;
+	width: 45%;
+ }
+section.de{
+	float: right;
+	width: 45%;
+	
+}
+aside {
+	clear: both;
+}
+section {
+	counter-reset: dfn1;
+}
+section dfn::before {
+	counter-increment: dfn1;
+	content:"*"counter(dfn1);
+	background-color: yellow;
+}
+
+}
+
+@media(min-width: 1100px){
+
+	nav ol li {
+ 	list-style-type: circle;
+ }
+ nav {
+ 	float: left;
+ 	width: 20%;
+ }
+ header {
+ 	float: left;
+ 	width: 80%;
+
+ }
+ header img {
+ 	float: left;
+
+ }
+ header h1 {
+ 	float: left;
+ }
+	aside#anuncios{
+	float: left;
+	width: 25%
+}
+article{
+	float: right;
+	width: 69%;
+
+}
+article section.iz {
+	float: left;
+	width: 45%;
+
+}
+article section.de{
+	float: right;
+	width: 45%;
+	
+
+}
+footer {
+	clear: both;
+}
+section {
+	counter-reset: dfn1;
+}
+section dfn::before {
+	counter-increment: dfn1;
+	content:"*"counter(dfn1);
+	background-color: yellow;
+}
+
+}

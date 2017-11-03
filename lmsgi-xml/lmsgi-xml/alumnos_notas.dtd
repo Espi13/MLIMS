@@ -1,0 +1,36 @@
+<!ELEMENT clase (alumno+)>
+<!ELEMENT alumno (nombre,apellido,DNI,tel,email,calificaciones)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT DNI (#PCDATA)>
+<!ELEMENT tel (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT calificaciones (asignatura+)>
+<!ELEMENT asignatura (nombre,nota*)>
+<!ELEMENT nota (tipo,cal)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT cal (#PCDATA)>
+
+
+<!--<!ATTLIST alumno nexp CDATA #REQUIRED>-->
+<!--<!ATTLIST alumno nexp CDATA #FIXED "0000">--> 
+<!-- Si existe tiene que tener ese valor-->
+<!ATTLIST email visible (si|no|grupo) "si"> <!--Valor por defecto "si"-->
+
+<!--Clase atributo id, obligatorio
+     Alumno atributo nacionalidad, por defecto espaÃ±ola
+     Asignatura atributo horas enumerado 3 4 6 8
+     Nota atributo puntos opcional
+     -->
+     
+<!ATTLIST clase id CDATA #REQUIRED>
+<!--
+<!ATTLIST clase id NMTOKEN #REQUIRED>
+ NMTOKEN= no puede contener espacio-->
+<!ATTLIST alumno nacionalidad CDATA "espaÃ±ola">
+<!ATTLIST asignatura horas (3|4|6|8) #IMPLIED>
+<!ATTLIST nota punto CDATA #IMPLIED>
+<!--Restriccion de nmtoken y no se puede repetir-->
+<!ATTLIST alumno nexp ID #REQUIRED>
+<!--Debe de existir algun valor-->
+<!ATTLIST nota nexp_ref IDREF #IMPLIED>

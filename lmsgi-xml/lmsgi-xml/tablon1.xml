@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tablon SYSTEM "tablon1.dtd">
+
+
+<tablon>
+<mensaje id="A123" entrega="urgente" fecha="11-11-2017">
+<remitente >Ana</remitente>
+<destinatario>Luis</destinatario>
+<destinatario>Pepe</destinatario>
+<texto>sdfgsdfghsdfghdf
+ghdfghdfghd
+fghdfh
+dfg </texto>
+</mensaje>
+
+
+<mensaje entrega="normal">
+<remitente>Paco</remitente>
+<destinatario>Manolo</destinatario>
+<texto>dsfgbsfgbfh
+dfghdfghdfghdfgh</texto>
+</mensaje>
+
+
+</tablon>

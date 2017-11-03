@@ -1,0 +1,71 @@
+h2 {
+	text-align: center;
+
+}
+
+
+
+/*contadores en listas ANIDADAS*/
+
+/*ol {
+	counter-reset: cli;
+	list-style: none;
+}
+
+ article ol li::before{
+	counter-increment: cli;
+	content: counters(cli,".") " ";
+}*/
+
+/*dfn contador*/
+
+article {
+	counter-reset: contadorp;
+}
+
+article p::before {
+	counter-increment: contadorp;
+	content:"(" counter(contadorp) ")";
+}
+
+/*#contenedor{
+	counter-reset: contadorc;
+}
+
+p::before {
+	counter-increment: contadorc;
+	content:"(" counter(contadorc) ")";
+}*/
+
+
+/*dl{
+	counter-reset: cont;
+}
+ dt::before {
+ 	counter-increment: cont;
+ 	content: counter(cont) ".-";
+ 	color: red;
+ 	border: 1px solid blue;
+ 	background-color: yellow;
+ }*/
+
+ article{
+ 	counter-reset: nh2;
+ }
+
+article h2::before {
+ 	counter-increment: nh2;
+ 	content: counter(nh2) ".-";
+ 	color: blue;
+ }
+
+ article h2 {
+ 	counter-reset: nh3;
+ }
+ article h3::before{
+ 	counter-increment: nh3;
+ 	content: counter(nh2)"."counter(nh3) "-";
+ 	color: green;
+
+ }
+

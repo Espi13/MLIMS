@@ -1,0 +1,66 @@
+/*Tablas*/
+
+table, td, th {
+	border: 1px solid grey;
+}
+li:first-child {
+	color:blue;
+}
+li:last-child {
+	text-decoration: underline;
+}
+
+th[scope="col"] {
+	background-color: purple;
+}
+
+section p:nth-of-type(even){
+	border: 1px solid red;
+}
+/*El primer hijo/elemento dentro del section 
+que al ser un h2 no se colorea*/
+section p:first-child { 
+	color: red;
+}
+
+/*El primer hijo del tipo parrafo que encuentra*/
+section p:first-of-type {
+	color:green;
+}
+
+/*tr:nth-child(even) {
+	background-color: #89E9E1;
+	Se aplica a las filas pares 
+}*/
+/*
+tr:nth-child(odd) {
+	background-color: #77FA93;
+	Se aplica a las filas impares
+}*/
+/*tr:nth-child(3n+1) {
+	background-color: #89E9E1;
+	Se aplica cada tres lineas empezando desde la primera "+1"
+}*/
+
+/*tr:nth-child(2) {
+	background-color: #89E9E1;
+	Se aplica solamente a la fila que especificamos
+}*/
+
+/*tr:nth-child(odd) {
+	background-color: #77FA93;
+}*/
+tr:hover {
+	background-color: yellow;
+}
+
+table {
+	/*border-collapse: collapse;*/
+	/*border-spacing: 10px;*/
+	empty-cells: hide;
+	caption-side: bottom;
+}
+caption {
+	text-align: left;
+	font-weight: bold;
+}

@@ -1,0 +1,29 @@
+
+body{
+	background-color: green;
+	margin-left: 0;
+	margin-right: 0;}
+section{
+	background.color: silver;
+	padding: 16px;
+}
+p{
+	margin: 40px;
+	padding: 20px;
+	border: 1px black solid;
+	background-color: yellow;
+	box-shadow: 20px 10px 5px #EB4077;
+	border-radius: 50px 36px 23px 10px;
+  border: 2px solid #000000;
+}
+p.sinmargen{
+	margin-left: 0;
+	background-color: #E8ACE8;
+	text-align: center;
+	padding-bottom: 214px;
+/*	background-image: url(figuras/pensando.jpg);
+	background-repeat: repeat-y;
+	background-position: right; 
+	padding-bottom: 214px;*/
+	background: #E8ACE8 url(figuras/pensando.png) repeat-x center bottom;
+}

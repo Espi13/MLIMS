@@ -1,0 +1,80 @@
+/* Clase.css*/
+
+grupo:before{
+	content: "Pofesorado del grupo " attr(grupo);
+	text-decoration: underline;
+	margin-left: 2%;
+}
+
+profesor{
+	display: list-item;
+	list-style-position: inside;
+}
+responsable{
+	display: list-item;
+	list-style-type: circle;
+	list-style-position: inside;
+}
+profesor{
+	margin-left: 6%;
+}
+responsable{
+	margin-left:3%;
+}
+
+aula:before{
+	content: "Alumnado. Las clases se imparten en " attr(owner);
+}
+aula{
+	display: block;
+
+}
+alumno{
+	display: table-row;
+
+	
+}
+
+clase{
+	counter-reset: contalum;
+	display: block;
+	width: 80%;
+	margin-left: 2%;
+
+}
+nombre,alias,media,modulos{
+	display: table-cell;
+	border: 1px solid blue;
+
+}
+
+nombre:before {
+	counter-increment: contalum;
+	content: counter(contalum) ".-";
+}
+modulo{
+	display: list-item;
+	list-style-position: inside;
+
+}
+media{
+	padding-left: 8px;
+	width: 4%;
+}
+nombre {
+	padding: 10px 0 0 7px;
+	width: 35%;
+}
+alias{
+	width: 20%;
+	padding-left: 10px;
+}
+modulos{
+	width: 15%;
+	padding-left: 20px;
+}
+
+
+alias:after {
+	content: " ("attr(file)")";
+}

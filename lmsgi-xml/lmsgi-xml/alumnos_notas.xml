@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE clase SYSTEM "alumnos_notas.dtd">
+<clase id="daw1">
+<alumno nexp="A1234" nacionalidad="francesa" >
+<nombre>Jose</nombre>
+<apellido> de la pradera</apellido>
+<DNI>56748952F</DNI>
+<tel>654213789</tel>
+<email visible="no">josepradera@pruebas.com</email>
+<calificaciones>
+  <asignatura>
+    <nombre>LMSGI</nombre>
+    <nota nexp_ref="A1234">
+    <tipo>1ev</tipo>
+    <cal>7</cal>
+    </nota>
+  </asignatura>
+</calificaciones>
+</alumno>
+<alumno nexp="A12345">
+<nombre>Paco</nombre>
+<apellido>Villuela</apellido>
+<DNI>567445642F</DNI>
+<tel>65424489</tel>
+<email visible="grupo">pacogarcia@pruebas.com</email>
+<calificaciones>
+  <asignatura >
+    <nombre>LMSGI</nombre>
+    <nota punto="7">
+    <tipo>1ev</tipo>
+    <cal>7</cal>
+    </nota>
+  </asignatura>
+</calificaciones>
+</alumno>
+
+</clase>

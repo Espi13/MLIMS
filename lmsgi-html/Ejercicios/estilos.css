@@ -1,0 +1,33 @@
+div#contenedor {
+   width: 80%;
+   margin: 0 auto;
+   background-color: beige;
+   padding:2em;
+}
+div.borrador  * {
+  border: none;
+
+}
+div.borrador {
+  color:grey;
+  background-color:silver;
+  text-align: right;
+  font-style: italic;
+}
+span.mail {
+  font-family: sans-serif;
+  color: green;
+  font-weight: bold;
+}
+span.tel {
+  letter-spacing: 0.2em;
+  font-size: 140%;
+  background-color: fuchsia;
+  font-family: monospace;
+}
+h2 {
+  border-bottom: 1px solid black;
+}
+h3 {
+  border-bottom: 1px dashed black;
+}

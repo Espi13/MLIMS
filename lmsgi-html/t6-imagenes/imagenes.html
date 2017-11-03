@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tema6: imágenes</title>
+	<style>
+		img { border: 1px solid blue; }
+        /*borde de 1 pixel en las imagenes de color azul*/
+	</style>
+</head>
+<body>
+<h1>Uso del elemento img</h1>
+
+<img src="Html-css-js.png" alt="" width="550" height="322">
+<!--Para autocompletar el tamaño ctrl+u -->
+<!--Para ficheros superiores"../-->
+
+<h2>Trump: "Aceptaré los resultados de las elecciones... si gano"</h2>
+<img src="http://media.grupojoly.com/imagen.php?imagen=//0002197000/0002197127.JPG&an=230" alt="" >
+<!--Enlace a una imagen cualquiera-->
+
+<p> <svg height="100" width="100">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+</svg> </p>
+<!--propio lenguaje de html en la que representamos un circulo-->
+
+<p>
+<a href="http://www.google.es">
+	<img src="figuras/google+-logo.png" alt="logo de google" width="35" height="40" ></a>
+</p>
+
+<p><a href="html-css.jpg">Enlace a imagen</a></p>
+
+<p>
+	<img width="450" height="315" src="html-css.jpg" alt="imagen mostrando logos de html y css"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit officia, a nobis repellat et qui harum eum aut error. Quas hic maiores nesciunt dolor culpa voluptates, placeat. Minima, esse, quibusdam.</p>
+	<img src="Html-css-js.png" alt="imagen mostrando logos de html css y JS"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam eaque quidem saepe deleniti tenetur ipsum ad quam illo, harum. Explicabo excepturi magni, quos. Laborum impedit consequatur sit odit aperiam?</p>
+	<img src="Wikipedia logo version 2.svg" alt="Lorem ipsum dolor sit amet">
+</p>
+
+<img src="geometriaplana.jpg" alt="Figura con elementos geometricos, ect..." width="566" height="307" usemap="#figura">
+
+<map name="figura">
+	<area shape="rect" coords="309,46, 421,120" href="http://www.google.es" alt="">
+	<!-- Rectangulo -->
+	<!-- Esquina superior y esquina inferior -->
+	<area shape="poly" coords="76,45, 34,120, 120,120" href="https://www.ugr.es" alt="">
+	<!--Triangulo-->
+	<area shape="circ" coords="490,83, 40" href="http://marca.com" alt="">
+	<!-- Circulo -->
+	<!-- Necesitamos el centro y el radio -->
+
+</map>	
+<!--Imagen que en su interior en cada figura geometrica contiene un enlace-->
+
+<!--map>area*4-->
+<!-- Imagen creada por gimp
+Filtros->Web->Mapa de imagen -->
+
+<p>Mapeado de una imagen con gimp</p>
+<p>
+	<img src="andalucia.png" width="1600" height="1000" border="0" usemap="#map" />
+	
+	<map name="map">
+	<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+	<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+	<!-- #$-:Please do not edit lines starting with "#$" -->
+	<!-- #$VERSION:2.3 -->
+	<!-- #$AUTHOR:Espi -->
+	<area shape="poly" coords="242,250,225,242,231,222,191,213,175,270,159,270,144,263,142,278,120,277,108,280,104,305,95,327,65,349,51,385,33,416,42,435,51,460,44,467,52,473,53,510,60,542,81,540,141,536,189,556,221,572,263,599,288,623,306,638,321,679,333,677,330,664,333,645,322,634,329,617,321,583,335,570,331,566,338,555,332,543,337,511,327,500,337,493,333,479,349,471,323,413,291,404,294,390,309,378,333,365,366,363,374,373,381,348,400,355,397,334,387,329,397,317,388,315,382,302,341,282,335,267,317,262,311,279,279,274,283,262,275,249,250,249,225,242,118,290,262,511,97,309,173,240,186,282,240,308,236,305" href="http://www.huelva.es" />
+	<area shape="poly" coords="335,647,330,680,302,699,319,737,342,738,348,750,360,748,355,772,343,763,335,766,347,784,364,818,384,844,406,882,426,887,444,885,471,918,474,915,488,925,499,923,518,940,569,924,565,912,563,901,568,889,593,899,601,869,616,842,605,834,590,845,594,831,583,799,570,773,551,772,541,784,524,778,524,764,543,773,562,752,573,745,597,729,608,696,595,678,607,660,638,677,652,671,660,650,658,630,646,619,622,640,605,609,573,639,566,629,576,614,574,601,552,610,562,627,541,642,543,654,529,645,529,637,508,628,497,645,462,646,449,669,435,663,426,668,390,658,372,651,346,643,335,647,442,744" href="http://www.cadiz.es" />
+	</map>
+</p>
+
+
+
+</body>
+</html>

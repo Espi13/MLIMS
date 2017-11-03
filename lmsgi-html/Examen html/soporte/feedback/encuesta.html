@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Encuesta</title>
+	<link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+<ul>
+	<li><a href="../../index.html">Inicio</a></li>
+	<li><a href="encuesta.html">Encuesta</a></li>
+	<li><a href="../../docs/esquema.html">Esquema</a></li>
+</ul>
+<h1>Encuesta</h1>
+<form action="http://localhost/cgi-bin/formulario.pl">
+	
+<fieldset>
+	
+		<legend>Datos personales</legend>
+	<p>
+				<label >Usuario</label><input placeholder="Nombre y primer apellido" type="text" name="User" size="30">
+				<label > Clave <input pattern="[0-9]{4}[A-Z]" type="password" name="Clave"> </label> 
+				<label > Calificacíon de su último examen:</label>
+	</p>
+	
+				<select name="Calificacion">
+					<option value=""></option>
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="1">10</option>
+				</select>
+</fieldset>
+
+<fieldset>
+	<legend>Queja o reclamación </legend>
+
+	<p><label >Fecha <input type="date" name="Fecha" ></label></p>
+	<p>
+		<label >URL de la incidencia </label>
+			<input type="url" name="url">
+	</p>
+
+	<p>Prioridad</p>
+
+		<p> <label> <input  type="radio" name="Prioridad" value="U">Urgente </label></p>
+		<p><label><input type="radio" name="Prioridad" value="A">Alta</label></p>
+		<p><label><input  checked="" type="radio" name="prioridad" value="B" >Baja</label></p>
+
+<p>Si necesita adjuntar una captura explicando la incidencia: </p>
+<p><label >Fichero <input type="file" name="Fichero Incidencia" ></label></p>
+</fieldset>
+
+<fieldset>
+	<legend>Aceptaciones </legend>
+
+	<p>Me gustaría recibir publicidad de </p>
+	<p><label ><input type="checkbox" name="Publicidad" value="V">Viajes </label></p>
+	<p><label ><input type="checkbox" name="Publicidad" value="R">Ropa</label></p>
+	<p><label ><input type="checkbox" name="Publicidad" value="H">Hipermercado </label></p>
+	<p>El usuario acepta las condiciones legales<input required type="checkbox" name="Condiciones Legales" ></p>
+	<p>Mail para recibir respuesta <input type="email" name="correo electronico"  required></p>
+
+</fieldset>
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpiar">
+
+</form>
+	
+</body>
+</html>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

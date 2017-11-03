@@ -1,0 +1,7 @@
+
+Las siglas son muy utilizadas en Informatica, y si no sabe el significado de PHP, SQL, HTML o CSS deberá revisar sus conocimientos..
+
+Incluso a veces se abusa de abreviaturas, como js.
+
+Por ello es reomendable utilizar las etiquetas HTML adecuadas para facilitar al neofito la lectura del texto-
+

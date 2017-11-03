@@ -1,0 +1,8 @@
+<!ELEMENT tablon (anuncio*)> 
+<!ELEMENT anuncio (producto, descripcion, precio, contacto)>
+<!ELEMENT producto (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT contacto (mail*,tel?)>
+<!ELEMENT mail (#PCDATA)>
+<!ELEMENT tel (#PCDATA)>

@@ -1,0 +1,46 @@
+/*enlaces.css*/
+
+/*a[href$=".pdf"]{
+	background: url("imagenes/icon_pdf.gif") no-repeat right;
+ 	padding-right: 18px;
+}*/
+
+a.pdf{
+
+ background: url("imagenes/icon_pdf.gif") no-repeat right;
+ padding-right: 18px;
+}
+h1:hover {
+	border-bottom: 2px solid red;
+	text-align: center;
+}
+p:hover {
+	background-color: silver;
+
+}
+
+a{
+	/*display: block;*/
+	margin: 10px 0;
+	text-decoration: none;
+	border-bottom: 2px red dashed;
+	/*font-size: 1.5em;
+	text-decoration: none;
+	font-weight: bold;*/
+}
+a:link{ /*La url es de color verde hasta que se visita*/
+color: green;
+}
+nav a:visited{ /*Cambia los enlaces que se han visitado*/
+	color: grey;
+}
+a:hover { /*Se activa cuando pasamos por encima*/
+	font-weight: bold;
+}
+a:active {/*cuando cliqueamos*/
+	background-color: yellow;
+}
+a:focus { /*Cuando nos movemos con el tab*/
+	border: 1px dotted grey;
+}
+

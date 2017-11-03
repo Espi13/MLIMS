@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="clase.xsl"?>
+<!DOCTYPE grupo SYSTEM "clase.dtd">
+<grupo grupo="DAW1">
+  <profesorado>
+    <profesor tutor="si">
+      <nombreProfesor>Fran Cisco</nombreProfesor>
+      <responsable codigo="DAW-LMSGI">LMSGI</responsable>
+      <responsable codigo="DAW-Sistemas">Sistemas</responsable>
+    </profesor>
+    <profesor tutor="no">
+      <nombreProfesor>Ana Frank</nombreProfesor>
+      <responsable codigo="DAW-FOL">FOL</responsable>
+    </profesor>
+    <profesor>
+      <nombreProfesor>David Darwing</nombreProfesor>
+      <responsable codigo="DAW-ING">Inglés</responsable>
+    </profesor>
+  </profesorado>
+  <clase>
+    <aula>INFORMATICA 2</aula>
+  
+    <alumno repetidor="si">
+      <nombre>Ana Diosdado</nombre>
+      <alias file="ana.png"></alias>
+      <media>7.3</media>
+      <modulos>
+        <modulo codigo="DAW-LMSGI">LMSGI</modulo>
+        <modulo codigo="DAW-Sistemas">Sistemas</modulo>
+        <modulo codigo="DAW-FOL">FOL</modulo>
+      </modulos>
+    </alumno>
+    <alumno repetidor="si">
+      <nombre>Carlos Larrañaga </nombre>
+      <alias file="carlos.png">Carlos</alias>
+      <media>10</media>
+      <modulos>
+        <modulo codigo="DAW-LMSGI">LMSGI</modulo>
+        <modulo codigo="DAW-Sistemas">Sistemas</modulo>
+        <modulo codigo="DAW-FOL">FOL</modulo>
+      </modulos>
+    </alumno>
+    <alumno repetidor="si">
+      <nombre>Frank de la Jungla  </nombre>
+      <alias file="frank.png">Frank</alias>
+      <media>5.7</media>
+      <modulos>
+        <modulo codigo="DAW-LMSGI">LMSGI</modulo>
+        <modulo codigo="DAW-Sistemas">Sistemas</modulo>
+        <modulo codigo="DAW-FOL">FOL</modulo>
+      </modulos>
+    </alumno>
+  </clase>
+</grupo>

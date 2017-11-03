@@ -1,0 +1,81 @@
+/* layout.css */
+
+
+/*Ancho menor a 560px*/
+
+@media (max-width: 699px){
+
+nav ul li {
+	list-style-type: none;
+	overflow: hidden;
+		display: block;
+		float: left;
+		width: 25%;
+
+	}
+nav {
+		
+
+	}
+
+	aside {
+		display: none;
+
+	}
+
+
+section {
+	clear: both;
+}
+
+}
+@media (min-width: 960px) {
+
+
+	nav ul li:hover { /*Se activa cuando pasamos por encima*/
+	
+	font-weight: bold;
+	list-style-type: none;
+	background: url(../figuras/flecha.png) no-repeat left;
+	padding-left: 20px;
+	display: block;
+	position: relative;
+	right: 20px;
+
+}
+ nav {
+ 	float: left;
+ 	width: 20%
+ }
+ #principal {
+		float:right;
+		width: 30%;
+	}
+	#secunario {
+		float: left;
+		width: 50%;
+	}
+.izq {
+	display: block;
+	float: left;
+	width: 25%;
+
+}
+.dere {
+	display: block;
+	float left;
+
+
+}
+
+
+
+footer {
+	clear: both;
+}
+.contacto{
+float: left;
+margin-right: 20%;
+
+}⁠⁠⁠⁠
+}

@@ -1,0 +1,20 @@
+/* estilos.css*/
+
+
+/* usar en HTML, no modificar */
+
+th,
+tr,
+td {
+  border: #F00 solid 2px;
+  padding: 0.5em;
+}
+
+td {
+  text-align: right;
+}
+
+td[colspan],
+td[rowspan] {
+  text-align: center;
+}

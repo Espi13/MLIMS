@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inicio</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<ul>
+	<li><a href="index.html">Inicio</a></li>
+	<li><a href="soporte/feedback/encuesta.html">Encuesta</a></li>
+	<li><a href="docs/esquema.html">Esquema</a></li>
+</ul>
+
+<h1>Examinando que es gerundio: <em><dfn title="HyperText Markup Language">HTML</></em> y Bases de Datos</h1>
+
+<p>Página web que presenta por un lado noticias acerca del desarrollo web y por otro novedades en el uso de las bases de datos. Como dice el profesor en clase, citando a <cite>Jan L.A. van de Snepscheut</cite></p>
+<blockquote><em>En teoría</em>, no hay diferencia entre teoría y práctica. <em>Pero en la práctica</em>, sí que la hay.</blockquote> 
+<h2>menu interno</h2>
+<ol>
+	<li><a href="#desarrollo">Desarrollo Web</a> </li>
+		<ul>
+			<li><a href="#jQuery">jQuery before</a></li>
+			<li><a href="#SVG">Etiqueta SVG</a></li>
+		</ul>
+	
+	<li><a href="#BBDD">Bases de datos</a></li> 
+	<ul>
+		<li><a href="#Drop">Drop Procedure</a></li>
+	</ul>
+</ol>
+
+<h2>Noticias</h2>
+<h3 id="desarrollo">Desarrollo Web</h3>
+<h4 id="jQuery">jQuery before(): Añadir elementos por delante de otros</h4>
+
+<p>Veamos en este ejemplo de after() su funcionalidad:</p>
+<pre><code>
+$(document).ready(function(){
+  $("#boton").click(function(){
+    $("#parrafo1").before("&ltp>Este párrafo y su texto tienen que salir antes del párrafo&lt/p>");
+  }); 
+});
+</code></pre> 
+
+<p>Os explico el ejemplo: Detectamos el click en el elemento con id = ‘boton’. Después con before() insertamos un párrafo y texto por delante del párrafo 1. El código <em><dfn title="HyperText Markup Language">HTML</dfn></em> del párrafo 1 y el botón es el siguiente:</p>
+<pre><code>
+&ltinput type="button" id="boton" value="Añadir párrafo y texto antes del párrafo 1"> 
+&ltp id="parrafo1"> 
+    Inicio del párrafo 1. 
+    &ltbr> Final del párrafo 1. 
+&lt/p>
+</code></pre>
+         
+<p>La entrada jQuery before(): Añadir elementos por delante de otros aparece primero en Aner Barrena:</p> <a href="http://www.anerbarrena.com/jquery-before-5381/">http://www.anerbarrena.com/jquery-before-5381/</a>
+<h4 id="SVG">Etiqueta SVG: Gráficos vectoriales y escalables</h4>
+<h5>¿Qué nos permite hacer la etiqueta SVG? </h5>
+
+<p>Tal y como he comentado en las líneas superiores nos permite insertar imágenes vectoriales y escalables, esto quiere decir que dichas imágenes independientemente de las dimesiones que tengan nunca perderían calidad (Borrosas, pixeladas…) ni se deformarían. Las imágenes con las que trabajamos habitualmente (jpg, gif, png…) tienen un tamaño óptimo en el cual se visualizan correctamente, cualquier variación a unas dimensiones superiores o inferiores crearía un efecto de pixelación</p>
+
+<p>Como se puede observar en la siguiente figura, tenemos dos imágenes que provienen de una página web que proporciona ejemlos de ficheros SVG.</p>
+
+<img src="figuras/Dapper-Jack.jpg" alt="figura calabaza" width="200" height="200"> <img src="figuras/Terms-Of-Use.jpg" alt="terminos de uso" width="365" height="200">
+<pre>Ejemplo de dos imágenes que provienen de formato SVG de la pagina <a href="http://svgcuts.com/">http://svgcuts.com/</a> </pre>
+<h3 id="BBDD">Bases de datos</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est suscipit beatae veniam, cupiditate minus fugiat praesentium ea sint nesciunt minima neque tenetur, fuga repellat illum possimus reiciendis hic, voluptas ab vel tempora qui laboriosam. Corporis obcaecati perferendis ab, doloribus, ratione blanditiis nulla maxime deleniti odio explicabo neque harum pariatur non eum nesciunt exercitationem ex accusantium reiciendis, dolore provident totam, mollitia quisquam! Maxime dolor temporibus fugit cumque alias repellendus quibusdam, aliquid eligendi officia totam ea, nihil blanditiis iste debitis earum minima natus assumenda, maiores sed! Expedita recusandae voluptas blanditiis, sunt culpa. Asperiores doloremque eius nobis voluptas ullam amet inventore! Similique, vero.</p>
+
+
+<h4 id="Drop">procedimiento drop de MySQL</h4>
+
+<p>Vamos a ver la sentencia de MySQL DROP PROCEDURE que sirve para eliminar los procedimientos almacenados en una base de datos.</p>
+<p>Con los procedimientos almacenados se ahorra tiempo en la implementación (Comandos SQL) de las sentencias y además aumentamos la seguridad de nuestra base de datos MySQL al conceder únicamente permisos de su ejecución a los usuarios.</p>
+
+<p>Otras sentencias interesantes son:</p>
+<ul>
+	<li>CREATE PROCEDURE</li>
+	<li>ALTER PROCEDURE</li>
+	<li>CREATE TABLE y ALTER TABLE</li>
+	<li>INSERT</li>
+	<li>DELETE y TRUNCATE</li>
+</ul>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, id porro quae distinctio aliquid explicabo? Cupiditate sit nostrum doloremque culpa labore ipsum quas harum nobis explicabo quis mollitia velit cum ea nisi dolore officia hic eos magnam ullam, enim vitae molestiae? Facere ratione voluptates labore alias ab rem animi, at, pariatur nisi? Ipsum eligendi dicta repellendus doloremque nisi aut minima dolor veritatis pariatur eveniet error, nostrum harum, velit natus in corporis, quaerat ipsa. Libero quaerat aspernatur tempore, expedita iste optio reprehenderit quia doloribus! Tempora modi, fuga quod sit explicabo quaerat. Tempora obcaecati officia, ullam velit cupiditate iste quibusdam praesentium qui cumque voluptas perspiciatis, rem autem non animi. Architecto tempore, asperiores fugit cumque non dolorum quos sunt eligendi praesentium iure eaque!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente magnam harum officiis, id voluptas, nisi dicta fuga sunt esse facilis ipsam nobis necessitatibus recusandae inventore placeat maxime dolorum tempore, consequatur repellendus iusto impedit labore ad? Tempore perspiciatis at provident officia possimus, veritatis natus mollitia nihil eligendi consectetur, dolor fugit odio quis quibusdam iusto praesentium repudiandae. Consectetur est dolor sequi, repudiandae expedita? Quaerat nesciunt, nisi sit hic natus error odio maxime quos ratione iure similique esse distinctio. Laboriosam, dolorum. Non labore adipisci officia, porro dolor consequuntur officiis velit vitae autem iste quas quam natus cupiditate eaque! Est id ipsa aut, ullam impedit. Culpa suscipit quidem neque ratione fuga dignissimos qui quasi commodi ex reprehenderit, cumque distinctio. Voluptas sapiente, laboriosam! Eaque esse, illo natus non mollitia optio.</p>
+
+<h2>Datos de contacto</h2>
+
+<address>
+	<em><p>
+		<span class="telefono">Tel: 12345678 </span>
+	</p>
+		<p>
+			<span class="email">mail: html@html.land </span>
+		</p>
+		<p>Avda de las etiquetas perdidas </p>
+		<p>Villa de los atributos entrecomillados</p> 
+		<p>28804 - HTMLand </p></em>
+</address>
+<a href="index.html"><img src="figuras/inicio.png" alt="Imagen que redirige al inicio" width="24" height="24"></img></a>
+	
+</body>
+</html>
+

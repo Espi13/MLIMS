@@ -1,0 +1,25 @@
+/*flotante.css*/
+
+section {
+	border: 2px solid green;
+	overflow: auto;
+}
+
+img{
+	float:right;
+	border: 1px solid #f00;
+	margin: 10px;
+}
+h2.clear {
+	border: 3px dotted #000;
+	clear: both;
+}
+p.parrafo {
+	border: 4px solid blue;
+}
+.clear{
+	clear: both;
+}
+img.izquierda {
+	float: left;
+}

@@ -1,0 +1,35 @@
+
+
+fieldset{
+	width: 50%;
+	float: left;
+	box-sizing: border-box;;
+	margin: 0;
+}
+
+
+label {
+	float: left;
+	width: 15%;
+}
+div {
+	margin: 0.5em;
+}
+
+label {
+ display: block;
+}
+
+.clearfix { /* Se utiliza cuando tenemos problemas con elementos flotantes (float)*/
+	clear: both;
+}
+
+input[type="submit"] {
+	display: block;
+	margin-top: 2em;
+	clear: both;
+}
+
+	/*input:focus{
+		border: 2px solid  #006CFF ;
+	}*/

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario Prueba</title>
+</head>
+<body>
+
+<form action="http://localhost/cgi-bin/formulario.pl" method="get">
+<!-- input:email  comprueba el email introducido-->
+<!-- required es obligatorio escribir el correo -->
+<!-- placeholder remarca en el cuadro que introducir -->
+<!-- multiple permite introducir varias direcciones de correo separadas por , -->
+	<p>
+		CORREO<input multiple placeholder="Correo Electronico" required type="email" name="Email" id="">
+	</p>
+	<!-- input:url comprueba url -->
+	<p>
+		URL<input placeholder="Url de su sitio" type="url" name="Url" id="">
+	</p>
+	<!-- input:tel -->
+	<p>
+		TELEFONO<input placeholder="Introduce su telefono" type="tel" name="Telefono" id="">
+	</p>
+	<!-- p>input:search -->
+	<p><input placeholder="Buscar" type="search" name="" id=""></p>
+
+	<!-- p>input:number -->
+	<!-- min y max para limitar un rango de numeros -->
+	<!-- step="any" permite introducir numeros decimales -->
+	<p><input placeholder="Nota" type="number" name="Nota" id="" min="1" max="10" step="any"></p>
+
+	<!-- p>input:range -->
+	<p><input  type="range" name="Volumen" id=""></p>
+
+	<!-- p>input:color -->
+	<p><label >Color <input type="color" name="Color" ></label></p>
+
+	<!-- p>label>input:date -->
+	<p>Fecha de Nacimiento</p>
+	<p><label ><input type="date" name="nacimiento" ></label></p>
+
+
+	<p><label >Aficion <input type="text" name="Aficiones" list="aficiones" id=""></label></p>
+	<datalist id="aficiones">
+		<option value="CsGo">CsGo</option>
+		<option>Lolaso</option>
+		<option>HACF</option>
+	</datalist>
+
+	<label> De:<input name="Desde"  type="text" placeholder="Ciudad origen" list="city"></label>
+	<label>A:<input name="a"  type="text" placeholder="Ciudad destino" list="city"></label>
+<!-- lista enlazada con sugerencias -->
+	<datalist id="city">
+			<option value="Adelaide">Adelaide
+			<option>Beijing			
+			<option>Bandung
+			<option>Bangkok
+			<option>Beijing
+			<option>Hanoi
+			<option>Ho Chi Minh City
+			<option>Hong Kong
+	</datalist>
+	
+
+	<input type="submit" value="Enviar">
+	<input type="reset" value="Borrar">
+	</form>
+</body>
+</html>

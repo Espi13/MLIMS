@@ -1,0 +1,49 @@
+playlist:before{
+content: "Playlist versión:"  attr(version);
+display: block;
+}
+
+title{
+
+	color: green;
+	font-size: 20px;
+
+}
+title:first-child:after{
+	content: ", de ";
+	font-style: italic;
+}
+creator:before{
+	content: attr(owner);
+	
+}
+creator{
+	color: green;
+	font-size: 20px;
+}
+date{
+	padding-left: 30px;
+	display: list-item;
+	list-style-position: inside;
+}
+
+annotation,image,info,meta,extension{
+	display: none;
+}
+track{
+display: table-row;
+
+}
+trackList{
+	counter-reset: conturl;
+}
+location:before{
+	counter-increment: conturl;
+content: "( " counter(conturl) " ).-";
+}
+location,track creator,track title,duration{
+	display: table-cell;
+	border: 1px solid blue;
+	color: grey;
+	content: none;
+}

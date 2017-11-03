@@ -1,0 +1,32 @@
+CATALOG:before {
+content: "Mi coleccion de CDs de " attr(propietario);
+}
+PRICE:after { 
+content: " " attr(divisa);
+}
+
+CATALOG {
+display: table;
+    background-color: beige;
+    /*width: 100%;*/
+    margin-left: 10px;
+}
+CD {
+display: table-row;
+
+}
+
+TITLE,ARTIST,COUNTRY, PRICE, YEAR,COMPANY{
+    display: table-cell;
+    border: 1px solid black;
+  padding: 0.5em;
+  
+}
+
+COMPANY{
+display: none;
+}
+
+TITLE {
+ color: red;
+}

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tablon SYSTEM "tablon.dtd">
+<tablon>
+<anuncio> 
+<producto>Bico Segunda mano</producto>
+<descripcion> udhfusdfhusdhf</descripcion>
+<precio>a negociar</precio>
+<contacto>
+<mail>jose@prueba.com</mail>
+<mail>pepe@prueba.com</mail>
+<tel>123456789</tel>
+</contacto>
+</anuncio>
+<anuncio>
+<producto>Libro FOL</producto>
+<descripcion>en buen estado</descripcion>
+<precio> 10 euros</precio>
+<contacto>
+<mail>antonio@prueba.com</mail>
+</contacto>
+</anuncio>
+</tablon>

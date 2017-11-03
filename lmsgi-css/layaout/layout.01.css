@@ -1,0 +1,62 @@
+
+/*Centrar Horizontalmente*/
+/*div#contenedor { Se adapta el contenido
+	width: 80%;
+	margin: auto;
+}*/
+
+/*div#contenedor {  se adaptan los margenes
+	width: 400px;
+	margin: auto;
+}*/
+@media (orientation: portrait){ /*Se aplica cuando la pagina  se pone en vertical*/
+	div#contenedor{
+		background-color: yellow;
+		border: 1px solid red;
+		width: 100%;
+	}
+}
+
+@media print {
+	div#contenedor{
+		font-size: 10pt;
+	}
+	aside,footer,nav {
+		display: none;
+	}
+}
+#contenedor{ /*Se adapta tanto el contenido como los margenes*/
+	width: 80%;
+	min-width: 500px;
+	/*max-width: 800px;*/ 
+	margin: auto;
+	/*border-left:  1px solid blue;
+	border-right: 1px solid blue;
+	background-color: silver;*/
+}
+article,aside {
+	float: left;
+}
+article {
+	width: 60%;
+}
+aside{
+	width: 40%;
+}
+
+nav {
+	float: left;
+	width: 30%;
+}
+section {
+	float: left;
+	width: 70%;
+}	
+
+/*footer {
+	clear: both;
+}*/
+/*o*/
+/*.clear{
+	clear: both;
+}*/

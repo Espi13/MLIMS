@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<form  novalidate action="recibe.php">
+	
+	<p>
+		correo<input placeholder="E-mail" type="email" name="Correo" id="">
+	</p>
+
+		<p>
+			<!-- (label>input:r)*2 -->
+			<label >Soltero<input type="radio" name="estado" value="C"></label>
+			<label >Casado<input type="radio" name="estado" value="S"></label>
+		</p>
+
+	
+		<p>
+			<input value="LMSGI" type="checkbox" name="modulo" id="">
+			<label for="">Lenguaje de Marcas</label>
+		</p>
+		<p>
+			<input value="FOL" type="checkbox" name="modulo" id="">
+			<label for="">Formacion y Orientacion Laboral</label>
+		</p>
+		<p>
+			<input value="BD" type="checkbox" name="modulo" id="">
+			<label for="">Bases de Datos</label>
+		</p>
+	
+
+
+	<input type="submit" value="Enviar">
+	<input type="reset" value="Borrar">
+</form>
+	
+</body>
+</html>

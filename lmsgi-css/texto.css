@@ -1,0 +1,54 @@
+/*texto.css*/
+
+/* estudiar white-space*/
+
+@font-face {
+	font-family: nuevaFuente;
+	src: url(Amaranth-Bold.otf);
+}
+h1 {
+	color: #FF0000;
+	font-family: courier, monospace;
+	text-transform: capitalize; /*La primera letra de cada palabra en mayusculas*/
+	/*text-transform: lowercase; Todo en minusculas*/
+
+}
+/*p:first-line Primera linea del parrafo {
+	font-weight: bold;
+	font-family: 'Aladin';
+	font-size: 20px;
+	text-indent: 2em;
+
+}*/
+/*p:first-letter {
+	
+	font-weight: bold;
+	font-size: 2em;
+	float: left;
+}
+*/
+.fuente {
+	font-family: nuevaFuente, monospace;
+	color: #3000FF;
+	word-spacing: 1em; /*Separacion entre palabras*/
+}
+
+h2 {
+	letter-spacing: 1em; /*Separacion entre letras*/
+	text-align: center;
+	/*font-variant: small-caps;
+	font-weight: normal;
+	font-style: italic;
+	border-bottom: 1px dotted blue;
+	font-size: 1em;
+	
+	text-decoration: underline;*/
+}
+.prueba {
+	text-align: justify;
+}
+a {
+	text-decoration: underline;
+	font-size: 200%;
+	vertical-align: middle;
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplos novedades colores CSS3</title>
+  <style>
+  :root {
+    --color: blue;
+  }
+  h1{
+    color: var(--color);
+  }
+  p.difumina {
+    color: rgba(0, 0, 255, 0.5);
+  }
+  
+  h2 {
+    color: hsla(0, 100%, 50%, 0.5);
+  }
+  
+  h3 {
+    color: hsla(0, 100%, 50%, 1);
+  }
+  
+  img.difumina {
+    opacity: 0.2;
+  }
+  
+  ul.difumina li {
+    opacity: 0.75;
+  }
+  
+  ol.difumina li {
+    color: rgba(0, 0, 0, 0.75);
+  }
+  
+  figure {
+    text-align: center;
+  }
+  </style>
+</head>
+
+<body>
+  <h1>Ejemplos uso de nuevas valores para los colores en CSS3</h1>
+  <p>En esta página vemos el uso de </p>
+  <ul>
+    <li>Otra forma de aplicar colores: hsl</li>
+    <li>Uso de opacity para fijar la transparencia de un elemento</li>
+    <li>Uso de la transsparencia con los colores: rgba, hsla</li>
+  </ul>
+  <p>HSL es el acrónimo de hue(matiz), saturation (saturación), lightness (luminosidad). El valor del matiz se refiere a la frecuencia dominante del color dentro del espectro visible. Es un valor entre 0 y 360 (una rueda de color): rojo vale 0, verde 120, azul 240. La saturación se refiere a la intensidad del color, a la «pureza» de éste. La luminosidad es la cantidad de luz de un color. S y L son porcentajes entre 0 y 100%. </p>
+  <p>Usar HSL hace más sencillo crear armonías de colores variando alguno de los tres valores: paletas monocromáticas, paletas de colores análogos, complementarios, triadas, etc. Puedes hacerte una idea en estas webs: </p>
+  <ul>
+    <li> <a href="http://www.colorhexa.com/">http://www.colorhexa.com/</a>,</li>
+    <li> <a href="http://htmlcolorcodes.com/color-picker/">http://htmlcolorcodes.com/color-picker/</a> </li>
+    <li> <a href="http://paletton.com/">http://paletton.com/</a> </li>
+  </ul>
+  <p> La propiedad opacity toma valores entre 1, sin transparencia, y cero, transparente.
+    <figure>
+      <img class="difumina" src="http://www.iesromerovargas.es/Imagenes/fuente4.gif" alt="fuente IES" height="206" width="323">
+      <img src="http://www.iesromerovargas.es/Imagenes/fuente4.gif" alt="fuente IES" height="206" width="323">
+      <figcaption>La misma imagen con opacidad y sin ella</figcaption>
+    </figure>
+    La opacidad se puede especificar al mismo tiempo que el color. Para ello se usan las propiedades rgba, y hsla, que reciben un 4º valor, la opacidad.
+  </p>
+  <h2> h2 con color: hsla(0, 100%, 50%, 0.5) ..</h2>
+  <h3>h3 con color: hsla(0, 100%, 50%, 1)</h3>
+  <p class="difumina">A este párrafo se le aplica <code>color: rgba(0,0,255,0.5) </code>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, temporibus perspiciatis dolor placeat commodi accusamus. A, iure incidunt non odio sequi unde pariatur eveniet beatae architecto alias esse quas ut aliquam distinctio quia doloribus dignissimos assumenda tempore nulla quis dolorem aut dicta voluptatem? Beatae, provident cupiditate deserunt odio porro minima.</p>
+  <p>Consequuntur, modi dignissimos magnam incidunt eos vero eaque amet optio culpa nobis nam dolore rerum labore nulla architecto sapiente eveniet ea ipsa vitae suscipit nihil quidem iusto quos pariatur inventore. Cum, nemo, fuga, cumque, error unde temporibus illo ducimus est reprehenderit explicabo saepe culpa voluptatem veritatis porro officia laudantium voluptates!</p>
+  <p>Elementos de la lista con opacidad a 0.75</p>
+  <ul class="difumina">
+    <li>Lorem ipsum dolor sit.</li>
+    <li>Vero, tempora incidunt libero.</li>
+    <li>Sapiente, error non natus?</li>
+    <li>Cupiditate, ullam excepturi iste?</li>
+    <li>Incidunt, nisi excepturi error.</li>
+  </ul>
+  <p>Elementos de la lista con <code>color: rgba(0,0,0, 0.75);</code> </p>
+  <ol class="difumina">
+    <li>Lorem ipsum dolor.</li>
+    <li>Repudiandae, aliquam enim!</li>
+    <li>Officiis, nemo, velit!</li>
+    <li>Eligendi, a, deleniti.</li>
+    <li>A, illum, vitae.</li>
+  </ol>
+</body>
+
+</html>

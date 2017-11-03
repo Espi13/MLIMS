@@ -1,0 +1,11 @@
+/*flotante_layout.css*/
+
+section {
+	width: 50%;
+	float: left;
+	border:   2px dotted blue;
+	box-sizing: border-box;
+}
+footer {
+	clear: both;
+}

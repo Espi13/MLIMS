@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>t8-formularios</title>
+</head>
+<body>
+<h1>Formularios</h1>
+
+<!-- formulario -->
+<!-- action expecifica que pagina comprueba el formulario -->
+<!-- method get: envia los campos en la url -->
+<!-- method post: no se envia en la url los campos -->
+<form action="http://localhost/cgi-bin/formulario.pl" method="get">
+<!-- Cuadro de texto que se puede ampliar o reducir segun se quiera -->
+<p><label >Breve CV <br><textarea name="Descripcion" id="" cols="30" rows="10"></textarea></label></p>
+	<!-- input -->
+	<!-- Introducir algo rapidamente en una etiqueta mayus+ctrl+g -->
+
+	<!-- Desplegable con diferentes opciones -->
+
+
+	<h2>Input tipo file</h2>
+	<!-- p>label>input:file -->
+
+<p><label >Fichero con la factura <input type="file" name="Factura" ></label></p>
+<!-- Teoria -->
+<!-- Si se incluye un control para adjuntar archivos, es obligatorio añadir el atributo enctype en la etiqueta <form> del formulario. El valor del atributo enctype debe ser multipart/form-data, por lo que la etiqueta <form> de los formularios que permiten adjuntar archivos siempre es:
+<form action="..." method="post" enctype="multipart/form-data">
+  ...
+</form> -->
+
+
+
+		<h2>Select</h2>
+<!-- size="3" despliega 3 lineas -->
+<!-- multiple permite selecionar varios -->
+		<select name="Modulo" id="" size="3" multiple>
+			<option value="">Seleciona un Modulo</option>
+		<!-- optgroup permite diferencia opciones dentro del select -->
+			<optgroup label="Horario Mañana">
+				<option value="LM">Lenguaje de Marcas</option>
+				<option value="P">Programación</option>
+			</optgroup>
+
+			<optgroup label="Horario Tarde">
+				<option value="S">Sistemas</option>
+				<option value="E">Entornos</option>
+			</optgroup>
+		</select>
+		<!-- fieldset permite diferenciar entre datos personales,genrales, ect... -->
+		<fieldset>
+		<!-- legend Da titulo a esa agrupacion -->
+		<legend>Datos de Usuario</legend>
+			<p>
+				<label>
+					<!-- size limitamos el tamaño del cuadro -->
+					 <!-- maxlength limita el numero de caracteres -->
+					Nombre <input type="text" name="Usuario" size="8" maxlength="6">
+				</label>
+			</p>
+			
+			
+			<p>
+				<label for="apellidos">Apellidos</label> 
+				<input type="text" name="Apellidos" id="apellidos">
+			</p>
+			
+			<!-- label>input:t> -->
+			<!-- Contiene los dos apartados anteriores -->
+			<!-- <p>
+				<label for="prueba">Prueba <input type="text" name="prueba" id="prueba"></label>
+			</p> -->
+			
+			<!-- p>label>input:p> -->
+			
+			<p>
+				<label for="clave">
+					Contraseña <input type="password" name="Contraseña" id="clave">
+				</label>
+			
+			</p>
+		</fieldset>
+
+
+		<h2>Input tipo radio</h2>
+		<!-- p>label>input:r> -->
+		<!-- checked selecciona una de las opciones por defecto -->
+		<!-- checked o checked="checked" -->
+		<!-- los name de un mismo input deben tener el mismo nombre "matricula" -->
+		<!-- utilizamos value para distinguir la opcion elegida y enviar el value asociado al input -->
+		<p>Seleciona el tipo de matricula</p>
+		<p>
+			<label>
+				<input  checked type="radio" name="Matricula" value="N">Normal
+			</label>
+		</p>
+
+		<p><label><input type="radio" name="Matricula" value="R">Repetidor</label></p>
+
+		<p><label><input type="radio" name="Matricula" value="P" >Parcial</label></p>
+
+	<p>Selecciona el Sexo</p>
+	<p><label ><input type="radio" name="Sexo" value="M">Masculino</label></p>
+	<p><label ><input type="radio" name="Sexo" value="F">Femenino</label></p>
+
+	<h2>Input tipo checkbox</h2>
+	<!-- p*3>label>input:c -->
+	<p>Aficiones</p>
+	<p><label ><input type="checkbox" name="Aficiones" value="Vi">Viajes</label></p>
+	<p><label ><input type="checkbox" name="Aficiones" value="Tec">Tecnología</label></p>
+	<p><label ><input type="checkbox" name="Aficiones" value="Dep">Deportes</label></p>
+
+	<!-- Tambien es posible -->
+	<!-- <p><label ><input type="checkbox" name="Aficion1" value="Vi">Viajes</label></p>
+	<p><label ><input type="checkbox" name="Aficion2" value="Tec">Tecnología</label></p>
+	<p><label ><input type="checkbox" name="Aficion3" value="Dep">Deportes</label></p> -->
+
+	<!-- input:s> -->
+	<input type="submit" value="Enviar">
+	<!-- input:reset -->
+	<input type="reset" value="Limpiar">
+</form>
+	
+</body>
+</html>

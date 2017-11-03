@@ -1,0 +1,77 @@
+/*examen.css */
+propietario:before {
+	content: "Coleccion de peliculas de " attr(owner);
+	
+}
+propietario{
+	font-weight: bold;
+	display: block;
+}
+propietario,precioVenta{
+	padding-top: 5%;
+	padding-left: 5%; 
+}
+peliculas {
+	padding-right: 5%;
+	padding-left: 5%;
+}
+precioVenta:before{
+	content: "(Precio de venta: " attr(owner) ;
+	font-style: italic;
+}
+precioVenta:after{
+	content: ")";
+}
+peliculas{
+	display: block;
+	counter-reset: conttitu;
+}
+
+pelicula{
+	display: table-row;
+}
+titulo,duracion,director,reparto,sinopsis {
+	display: table-cell;
+	border: 1px solid black;
+	padding-left: 10px;
+}
+director:before{
+	
+	content: "Director:";
+	color: red;
+	display: block;
+}
+titulo:before{
+	
+	counter-increment: conttitu;
+	content: counter(conttitu)"-";
+}
+reparto{
+
+	counter-reset: contactor;
+}
+reparto:before{
+	content: "Reparto";
+	color: red;
+}
+actor:before{
+	counter-increment: contactor;
+	content:counter(conttitu)"."counter(contactor)".-";
+
+}
+
+tituloOriginal,cartel{
+	display: none;
+}
+actor {
+	display:  block;
+	white-space: pre;
+	padding-right: 80%;
+}
+titulo{
+	white-space: pre;
+}
+duracion:after {
+	content: "m.";
+
+}

@@ -1,0 +1,10 @@
+<!ELEMENT tablon (mensaje+)>
+<!ELEMENT mensaje (remitente,destinatario+,texto)>
+
+<!ELEMENT remitente (#PCDATA)>
+<!ELEMENT destinatario (#PCDATA)>
+<!ELEMENT texto (#PCDATA)>
+
+<!ATTLIST mensaje entrega (urgente|normal) #REQUIRED>
+<!ATTLIST mensaje fecha NMTOKEN #IMPLIED>
+<!ATTLIST mensaje id ID #IMPLIED>

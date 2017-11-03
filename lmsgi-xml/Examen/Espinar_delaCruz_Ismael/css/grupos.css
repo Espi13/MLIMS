@@ -1,0 +1,49 @@
+section {
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: cyan;
+  border: 1px solid blue;
+  box-shadow: 10px 10px 5px blue;
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  width: 80%;
+}
+th {
+  background-color: purple;
+  color: white;
+}
+th,
+td {
+  border: 1px solid brown;
+  padding: 0 0.5em;
+}
+
+#alumnado {
+  margin: auto;
+  width: 90%;
+}
+
+.alumno {
+  background-color: silver;
+  float: left;
+  margin: 1%;
+  padding: 0.5em;
+  text-align: center;
+  width: 31%;
+}
+.negrita{
+	font-weight: bold;
+}
+.cursiva {
+	font-style: italic;
+}

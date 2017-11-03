@@ -1,0 +1,93 @@
+aside,
+footer,
+header,
+nav,
+section {
+  background-color: silver;
+  border: 1px dotted black;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+footer {
+  clear: both;
+}
+
+
+/* RWD  */
+
+
+/* Si no se espcifica nada, los bloques ocupan el 100%, luego 
+  aparecen apilados (stacked) */
+
+
+/* primer punto de ruptura : si el ancho es 600 o más..*/
+
+@media screen and (min-width: 600px) {
+  aside,
+  section {
+    float: left;
+    width: 50%;
+  }
+}
+
+
+/* si el ancho pasa de 900:
+   (nota: se aplican las de >600 y estas de >900)
+  */
+
+@media screen and (min-width: 900px) {
+  aside,
+  nav {
+    float: left;
+    width: 25%;
+  }
+  section {
+    float: left;
+    width: 50%;
+  }
+}
+
+
+/* si pasamos de 1200: todas las anteriores más.. */
+
+@media screen and (min-width: 1200px) {
+  aside,
+  nav {
+    float: left;
+    width: 20%;
+  }
+  section {
+    float: left;
+    width: 40%;
+  }
+  header {
+    float: left;
+    width: 20%;
+  }
+}
+
+
+/* hoja de estilos para impresión */
+
+@media print {
+  header {
+    background-color: lime;
+  }
+  aside {
+    display: none;
+  }
+}
+
+
+/* específica para interior barra navegación: 
+para anchos MENORES los enlaces se muestran 
+como lementos inline para ocupar menos espacio vertical */
+
+@media screen and (max-width: 900px) {
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+}

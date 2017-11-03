@@ -1,0 +1,68 @@
+
+/*Selectores de atributos*/
+ dfn[title] {
+ 	background-color: yellow;
+ }
+
+[lang|="en"] {
+	color: red;
+}
+a[href$=".pdf"] {
+	font-weight: bold;
+}
+a[href^="https://"] {
+	text-decoration: none;
+}
+a[href*=".google."] {
+	font-style: italic;
+}
+
+/*section > p {
+	color: blue;
+}*/
+
+/*h2 + p {
+	border-bottom: red 2px solid;
+}
+p + p {
+	color: green;
+}
+*/
+
+/*
+.novedad {
+	background-color: yellow;
+}
+.resumen {
+	font-weight: bold;
+}
+.novedad.resumen {
+	color: red;
+}*/
+
+
+
+/*header  p {color: red;}
+section#cultura {
+	border: 2px solid green;
+	color: red;
+}
+article#cultura{
+	color: purple;
+}
+h2 {color: blue;}
+ section article p {color: brown;}
+/*section, p {color: orange;}
+ nav ul li a {text-decoration: none}
+h1.novedad {
+	background-color: yellow;
+	color: blue;
+}
+.novedad {
+	margin: 40px;
+	font-weight: bold;
+	color: red;
+}
+/*h1 .novedad {
+	background-color: green;
+}*/

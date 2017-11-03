@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Diseño adaptativo</title>
+  <style>
+  body {
+    background-color: lightgreen;
+  }
+  
+  @media only screen and (orientation: landscape) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <h1>CSS3 Media Queries</h1>
+  <h2>CSS2 Media Types</h2>
+  <p>La regla <code>@media</code> de CSS2 permite aplicar diferentes estilos para diferentes medios, pincipalmente screen y print como ya hemos visto con el uso de <code>link</code></p>
+  <pre><code> 
+  @media print {
+    body { font-size: 10pt;}
+    aside { display: none;}
+  }
+  </code></pre>
+  <p>O con <code>@import</code></p>
+  <pre><code> 
+  @import url("estilos_impresora.css") print;
+  </code></pre>
+  <p> O con link </p>
+  <pre><code> 
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;print, handheld&quot; href=&quot;especial.css&quot; /&gt;
+  </code></pre>
+  <h2>CSS3 Media Queries</h2>
+  <p>Las Media Queries en CSS3 extienden la idea de las CSS2 media types: en vez de mirar sólo el tipo de dispositivo pueden consultar las características del dispositivo, por ejemplo la anchura y altura del dispositivo, la orientación, la anchura mínima o máxima, etc. </p>
+  <h3>Sintaxis de una Media Query </h3>
+  <p>Añade a la sintasis de una CSS2 media type una o más expresiones, las cuales dan como resultado un valor verdadero o falso. El resultado global es verdadero si el tipo coincide y la expresiones son verdaderas. Si es verdadera, las reglas de estilo incluidas se aplican. </p>
+  <p>
+    El tipo del medio es opcional, si no se incluye vale "all". Por lo tanto estas reglas son equivalentes:</p>
+  <pre><code> 
+  @media (orientation: portrait) { … }
+  @media all and (orientation: portrait) { … }
+</code></pre>
+  <h3>Ejemplos</h3>
+  <ul>
+    <li>Modificamos el color de fondo al alcanzar una anchura mínima <a href="http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_media_example1">Ejemplo 1</a></li>
+    <li>Si el ancho es suficiente el menú flota a la izquierda<a href="http://www.w3schools.com/css/tryit.asp?filename=trycss3_media_queries2">Ejemplo 2</a></li>
+  </ul>
+  <p>O usando la orientación del dispositivo:</p>
+  <pre><code> 
+  body {
+    background-color: lightgreen;
+  }
+  @media only screen and (orientation: landscape) {
+    body {
+      background-color: lightblue;
+    }
+  }
+</code></pre>
+  <p>Nota: active el inspector de elementos, seleccione "Toggle device mode" (el icono del móvil) y seleccioné un dispositivo móvil. Modifique la orientación (portrait o landscape) y observe como se modifica el color de fondo. También si hace el ancho mayor que el alto..</p>
+  <h2>RWD: Responsive web design </h2>
+  <p> Las media querys nos permiten incluir <strong>puntos de ruptura (breaks)</strong> en nuestro diseño del layout para que este se adapte mejor a los cambios de dispositivos, etc.</p>
+  <p> observa la introducción de <a href="http://www.w3schools.com/css/css_rwd_intro.asp">W3schools y RWD</a></p>. Y en el siguiente ejemplo tenemos un layout estándar que se va adaptando al cambio de la anchura del dispositivo: <a href="http://es.learnlayout.com/media-queries.html">http://es.learnlayout.com/media-queries.html</a> </p>
+  <p>Y un Ejemplo avanzado de como ir mejorando una lista de enlaces a medida que aumenta el tamaño disponible:
+    <a href="https://css-tricks.com/css-media-queries/">https://css-tricks.com/css-media-queries/</a></p>
+  <p>Y un par de enlaces de ampliación</p>
+  <ul>
+    <li><a href="https://developers.google.com/web/fundamentals/design-and-ui/responsive/?hl=en">Qué dicen desde Google</a></li>
+    <li><a href="https://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/">Explicando meta viewport</a></li>
+  </ul>
+</body>
+
+</html>

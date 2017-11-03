@@ -1,0 +1,48 @@
+/*
+ basico.css 
+*/
+body {
+	background-color: beige;
+}
+ 
+ 
+ header p {
+ 	clear: both;
+ }
+
+a:link{ 
+color: brown;
+font-style: bold;
+text-decoration: none;
+
+}
+
+
+article h2 {
+	display: block;
+
+}
+
+
+  p:nth-child(odd){
+	font-style: italic;
+	text-align: right;
+}
+
+input:focus{
+		background-color: cyan;
+		background: url(../figuras/ico_lupa.png) no-repeat right;
+
+	}
+
+
+ footer {
+ 	border-top: 1px solid blue;
+ }
+ form {
+ 	float: left;
+ 	width: 50%;
+ }
+ a[href=""]::before {
+ 	content: "- Error: url vacia- ";
+ }

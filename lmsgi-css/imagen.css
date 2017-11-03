@@ -1,0 +1,80 @@
+/*imagen.css*/
+
+/*MENU HORIZONTAL*/
+* {
+	box-sizing: border-box;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid grey;
+	overflow: hidden;
+
+}
+nav ul li {
+	border: 1px solid grey;
+	background-color: #CCC;
+	width:  25%;
+	float: left;
+}
+nav  a {
+	display: block;
+	text-decoration: none;
+	padding: .2em;
+	color: #1706BB;
+	text-align: center;
+}
+
+
+
+
+/*Menu VERTICAL*/
+/*nav ul {
+	width:  160px;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid grey;
+
+}
+nav ul li {
+	border-bottom: none;
+	border: 1px solid grey;
+	background-color: #CCC
+}
+nav  a {
+	display: block;
+	text-decoration: none;
+	padding: .2em 0 .2em .5em;
+	color: #1E8C23;
+	text-align: center;
+}*/
+
+/*
+ol {
+	list-style: upper-roman;
+}
+
+}
+*/
+/*
+ul{
+	list-style-position: inside;
+	list-style: circle; Cambia el indicador que aparece por un circulo
+	list-style-image: url("imagenes/tick.png");
+	list-style: none; Quita los cuadraditos de la lista
+}
+*/
+img {
+	
+	border: 1px silver solid;
+	/*border-radius: 49%;*/
+	padding: 5px;
+	background-color: #ccc;
+	display: block;
+	margin: auto; /*situa la imagen en el centro*/
+	/*width: 100%; Ajusta la imagen al navegador para que aumente o 
+	height: auto; disminuya  su tamaña con la ventana del navegador*/
+}
